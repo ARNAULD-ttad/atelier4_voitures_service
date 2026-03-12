@@ -48,3 +48,13 @@ class Voiture:
         self.modele = modele
         self.matricule = matricule
         self.employe = None
+
+    def afficher_info(self):
+
+        print("Voiture :", self.marque, self.modele)
+        print("Matricule :", self.matricule)
+
+        if self.employe is not None:
+            print("Employé :", self.employe.nom)
+        else:
+            print("Aucun employé")
