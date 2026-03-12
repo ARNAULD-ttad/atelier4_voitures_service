@@ -58,3 +58,10 @@ class Voiture:
             print("Employé :", self.employe.nom)
         else:
             print("Aucun employé")
+e1 = Employe(1, "Alice", "Manager")
+e2 = Employe(2, "Bob", "Technicien")
+e3 = Employe(3, "Charlie", "Comptable")
+
+v1 = Voiture("Toyota", "Corolla", "AA111")
+v2 = Voiture("BMW", "X5", "BB222")
+v3 = Voiture("Audi", "A4", "CC333")
