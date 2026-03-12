@@ -31,3 +31,13 @@ class Employe:
 
         print("Voiture attribuée à", self.nom)
 
+    def retirer_voiture(self):
+
+        if self.voiture is None:
+            print("Cet employé n'a pas de voiture")
+            return
+
+        self.voiture.employe = None
+        self.voiture = None
+
+        print("Voiture retirée")
