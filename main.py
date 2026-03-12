@@ -15,3 +15,19 @@ class Employe:
             print("Voiture :", self.voiture.marque, self.voiture.modele)
         else:
             print("Aucune voiture attribuée")
+
+    def attribuer_voiture(self, voiture):
+
+        if self.voiture is not None:
+            print("Cet employé possède déjà une voiture")
+            return
+
+        if voiture.employe is not None:
+            print("Cette voiture est déjà attribuée")
+            return
+
+        self.voiture = voiture
+        voiture.employe = self
+
+        print("Voiture attribuée à", self.nom)
+
