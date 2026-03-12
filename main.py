@@ -41,3 +41,10 @@ class Employe:
         self.voiture = None
 
         print("Voiture retirée")
+class Voiture:
+
+    def __init__(self, marque, modele, matricule):
+        self.marque = marque
+        self.modele = modele
+        self.matricule = matricule
+        self.employe = None
